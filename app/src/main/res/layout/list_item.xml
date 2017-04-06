@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+    >
+
+    <!--Magnitude TextView-->
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+
+    <!--Place Offset TextView-->
+    <TextView
+        android:id="@+id/place_offset"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+
+    <!--Place Primary Location TextView-->
+    <TextView
+        android:id="@+id/place_primary_location"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+
+    <!--Date TextView-->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"/>
+
+    <!--Time TextView-->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"/>
+
+</LinearLayout>
