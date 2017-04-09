@@ -8,7 +8,7 @@ import java.util.Date;
  */
 
 /*
-* Earthquake class to hold all the relevant information for a single earthquake
+* {@link Earthquake} class to hold all the relevant information for a single earthquake
 * */
 public class Earthquake {
     // Float to hold the EQ's magnitude
@@ -18,13 +18,21 @@ public class Earthquake {
     // Variable to hold the date of an EQ
     private long mMilliseconds;
 
-    private Date mDate;
+    private String mUrl;
 
+    public String getUrl() {
+        return mUrl;
+    }
 
-    public Earthquake(String magnitude, String place, long date) {
-        mMagnitude = magnitude;
-        mPlaceName = place;
-        mMilliseconds = date;
+    public void setUrl(String url) {
+        this.mUrl = url;
+    }
+
+    public Earthquake(String magnitude, String place, long date, String url) {
+        setMagnitude(magnitude);
+        setPlaceName(place);
+        setMilliseconds(date);
+        setUrl(url);
     }
 
     public String getMagnitude() {
