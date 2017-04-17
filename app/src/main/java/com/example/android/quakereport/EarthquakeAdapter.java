@@ -69,6 +69,7 @@ public class EarthquakeAdapter extends ArrayAdapter {
         return listItemView;
     }
 
+
     /*
     * Method to set the appropriate color to the Magnitude View due to the Magnitude value
     * */
