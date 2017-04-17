@@ -39,6 +39,12 @@ public final class QueryUtils {
      * parsing a JSON response.
      */
     public static List<Earthquake> fetchEarthquakeData(String requestUrl) {
+        // Test the Progress Bar
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         Log.i(LOG_TAG, "Fetching data");
         // Create an empty ArrayList that we can start adding earthquakes to
         List<Earthquake> earthquakes;

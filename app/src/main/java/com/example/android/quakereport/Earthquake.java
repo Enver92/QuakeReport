@@ -2,6 +2,7 @@ package com.example.android.quakereport;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by Enver on 04.04.2017.
@@ -61,7 +62,7 @@ public class Earthquake {
 
     // Method to return a date
     public String getDate() {
-        SimpleDateFormat date = new SimpleDateFormat("MMM DD, yyyy");
+        SimpleDateFormat date = new SimpleDateFormat("LLL DD, yyyy", Locale.getDefault());
         return date.format(new Date(this.getMilliseconds()));
     }
 
